@@ -13,7 +13,7 @@ module.exports = function (homebridge) {
   UUIDGen = homebridge.hap.uuid;
 
   util.inherits(BeurerLight, Accessory);
-  homebridge.registerPlatform("homebridge-beurer", "Beurer", Beurer);
+  homebridge.registerPlatform("homebridge-beurer-light", "BeurerLight", Beurer);
 }
 
 function Beurer(log, config, api) {
@@ -52,7 +52,7 @@ function Beurer(log, config, api) {
     var light = new BeurerLight(accessory, this);
     light.setPeripheral(peripheral);
     this.accessories.push(light);
-    this.api.registerPlatformAccessories("homebridge-beurer", "Beurer", [accessory]);
+    this.api.registerPlatformAccessories("homebridge-beurer-light", "BeurerLight", [accessory]);
   };
 
   this.configureAccessory = function (accessory) {

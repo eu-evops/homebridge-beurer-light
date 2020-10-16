@@ -1,6 +1,6 @@
 {
   "name": "@evops/homebridge-beurer-light",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -14,8 +14,7 @@
   "dependencies": {
     "@abandonware/noble": "^1.9.2-10",
     "color-convert": "^1.9.1",
-    "hsl-to-rgb": "^1.0.0",
-    "xpc-connect": "^2.0.0"
+    "hsl-to-rgb": "^1.0.0"
   },
   "keywords": [
     "homebridge-plugin"
